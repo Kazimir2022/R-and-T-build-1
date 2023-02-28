@@ -42,6 +42,9 @@
                                 <rect key="frame" x="692" y="321" width="132" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="О программе"/>
+                                <connections>
+                                    <segue destination="Lgc-PT-xxN" kind="show" id="x7n-yD-1AM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -50,6 +53,7 @@
                             <constraint firstItem="Kta-B1-rl4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KAS-Ce-3ss"/>
                             <constraint firstItem="inq-Qp-nNN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KfL-MS-Xc1"/>
                             <constraint firstItem="bAv-1q-iqy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="M6s-6S-gpo"/>
+                            <constraint firstItem="bAv-1q-iqy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="inq-Qp-nNN" secondAttribute="trailing" constant="8" symbolic="YES" id="Mna-wF-SXF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bAv-1q-iqy" secondAttribute="trailing" constant="20" id="Pmb-h1-Btl"/>
                             <constraint firstItem="L9c-oi-eik" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QYv-SL-Snh"/>
                             <constraint firstItem="L9c-oi-eik" firstAttribute="top" secondItem="Kta-B1-rl4" secondAttribute="bottom" constant="30" id="Rs5-W3-YUb"/>
@@ -59,6 +63,7 @@
                             <constraint firstItem="inq-Qp-nNN" firstAttribute="top" secondItem="L9c-oi-eik" secondAttribute="bottom" constant="30" id="zVQ-R4-A23"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Bg5-Ha-HbO"/>
                     <connections>
                         <outlet property="label" destination="L9c-oi-eik" id="Mq8-th-OUa"/>
                         <outlet property="slider" destination="Kta-B1-rl4" id="AcL-cz-0Y3"/>
@@ -76,18 +81,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJm-SJ-i5a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJm-SJ-i5a">
                                 <rect key="frame" x="380" y="179" width="88" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7WH-HS-WP2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3t5-VU-Qu6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BJm-SJ-i5a" firstAttribute="leading" secondItem="3t5-VU-Qu6" secondAttribute="leading" constant="380" id="Oty-cl-dR5"/>
+                            <constraint firstItem="BJm-SJ-i5a" firstAttribute="top" secondItem="3t5-VU-Qu6" secondAttribute="top" constant="132" id="avx-20-h2p"/>
+                            <constraint firstItem="3t5-VU-Qu6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BJm-SJ-i5a" secondAttribute="trailing" symbolic="YES" id="oRz-DO-cIn"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mt7-aJ-2dG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poM-4o-4uu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
