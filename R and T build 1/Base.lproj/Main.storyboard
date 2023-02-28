@@ -49,6 +49,10 @@
                             <constraint firstItem="inq-Qp-nNN" firstAttribute="top" secondItem="L9c-oi-eik" secondAttribute="bottom" constant="30" id="zVQ-R4-A23"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="L9c-oi-eik" id="Mq8-th-OUa"/>
+                        <outlet property="slider" destination="Kta-B1-rl4" id="AcL-cz-0Y3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
