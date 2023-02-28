@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "15302933-5A61-4320-A7D3-4D2609A513CA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05B3D052-5485-4498-B2AB-46913355CB84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "R and T build 1/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "05B3D052-5485-4498-B2AB-46913355CB84 - ae2d52ffbb245ba5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "R_and_T_build_1.ViewController.slider.getter : Swift.Optional&lt;__C.UISlider&gt;"
+                  moduleName = "R and T build 1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazimir/Desktop/myProjects/R%20and%20T%20build%201/R%20and%20T%20build%201/R%20and%20T%20build%201/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "05B3D052-5485-4498-B2AB-46913355CB84 - 823ab376a0522b91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "R_and_T_build_1.ViewController.slider.setter : Swift.Optional&lt;__C.UISlider&gt;"
+                  moduleName = "R and T build 1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazimir/Desktop/myProjects/R%20and%20T%20build%201/R%20and%20T%20build%201/R%20and%20T%20build%201/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "05B3D052-5485-4498-B2AB-46913355CB84 - 5fe34e79a02cafa2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "R_and_T_build_1.ViewController.slider.modify : Swift.Optional&lt;__C.UISlider&gt;"
+                  moduleName = "R and T build 1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazimir/Desktop/myProjects/R%20and%20T%20build%201/R%20and%20T%20build%201/R%20and%20T%20build%201/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "05B3D052-5485-4498-B2AB-46913355CB84 - 18afd8680a1a394a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "R_and_T_build_1.ViewController.slider.modify : Swift.Optional&lt;__C.UISlider&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "R and T build 1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazimir/Desktop/myProjects/R%20and%20T%20build%201/R%20and%20T%20build%201/R%20and%20T%20build%201/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "05B3D052-5485-4498-B2AB-46913355CB84 - cfec9a7fd5c8b499"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "R_and_T_build_1.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; R_and_T_build_1.ViewController"
+                  moduleName = "R and T build 1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazimir/Desktop/myProjects/R%20and%20T%20build%201/R%20and%20T%20build%201/R%20and%20T%20build%201/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "05B3D052-5485-4498-B2AB-46913355CB84 - 92831a4642406e9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "R_and_T_build_1.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;R_and_T_build_1.ViewController&gt;"
+                  moduleName = "R and T build 1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kazimir/Desktop/myProjects/R%20and%20T%20build%201/R%20and%20T%20build%201/R%20and%20T%20build%201/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
