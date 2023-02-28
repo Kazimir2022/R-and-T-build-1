@@ -80,6 +80,12 @@ print("loadView ViewController")
         label.text = String(self.genNumber)
         
     }
+    @IBAction func showNextScrean() {
+        let secondViewController = SecondViewController()
+        self.present(secondViewController, animated: true, completion: nil)
+        
+        
+    }
     
     
     
