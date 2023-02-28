@@ -15,41 +15,35 @@ class ViewController: UIViewController {
     var genNumber:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        genNumber = Int.random(in: 1...50)
+        round += 1
+        label.text = String(self.genNumber)
     }
     @IBAction func checkResult() {
         
-        if self.round == 0 {
-            genNumber = Int.random(in: 1...50)
-            round += 1
-            label.text = String(self.genNumber)
-            
+        let sliderNumber = Int(slider.value.rounded())
+        
+        if sliderNumber > self.genNumber{
+            points += 50 - (sliderNumber - self.genNumber)
+        } else if sliderNumber < self.genNumber{
+            points += 50 - (self.genNumber - sliderNumber)
         } else {
-            let sliderNumber = Int(slider.value.rounded())
-
-            if sliderNumber > self.genNumber{
-                points += 50 - (sliderNumber - self.genNumber)
-            } else if sliderNumber < self.genNumber{
-                points += 50 - (self.genNumber - sliderNumber)
-            } else {
-                points += 50
-            }
+            points += 50
         }
+    
         
         
-        if self.round == 5 {
-            let alert = UIAlertController(title: "Игра окончена", message: "Вы заработали \(self.points) очков", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "начать заново?", style: .default, handler: nil))
-            self.present(alert, animated: true)
-            self.round = 1
-            self.points = 0
-        } else {
-            self.round += 1
-        }
+    if self.round == 5{
+        let alert = UIAlertController(title: "Игра окончена", message: "Вы заработали \(self.points) очков", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "начать заново?", style: .default, handler: nil))
+        self.present(alert, animated: true)
+        self.round = 1
+        self.points = 0
+    } else {
+        self.round += 1
+    }
         genNumber = Int.random(in: 1...50)
         label.text = String(self.genNumber)
-        
-        
         
     }
     
