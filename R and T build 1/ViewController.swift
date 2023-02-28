@@ -80,17 +80,9 @@ print("loadView ViewController")
         label.text = String(self.genNumber)
         
     }
-    lazy var secondVC:SecondViewController = getSecondViewController()
+   
     
-    private func getSecondViewController()-> SecondViewController{
-        let storybord = UIStoryboard(name: "Main", bundle: nil)// загружаем файл storyboard
-                let viewController = storybord.instantiateViewController(withIdentifier: "SecondViewController")
-    return viewController as! SecondViewController
-    }
-    @IBAction func showNextScrean() {
-        self.present(secondVC, animated: true)
-    }
-    
+   
     
     
     
