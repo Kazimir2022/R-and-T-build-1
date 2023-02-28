@@ -13,7 +13,14 @@ class ViewController: UIViewController {
     var points:Int = 0
     var round:Int = 0
     var genNumber:Int = 0
+    override func loadView (){
+        super.loadView()
+print("loadView ViewController")
+    }
     override func viewDidLoad() {
+        
+        print("viewDidLoad ViewController")
+        
         super.viewDidLoad()
         genNumber = Int.random(in: 1...50)
         round += 1
@@ -22,8 +29,30 @@ class ViewController: UIViewController {
         let versionLababel = UILabel(frame: CGRect(x: 20, y: 10, width: 200, height: 50))//создаем новую текстовую метку
         versionLababel.text = "v. 1.1"
         self.view.addSubview(versionLababel)
-        
     }
+    
+    
+    
+        override func viewWillAppear(_ animated:Bool){
+            super.viewWillAppear(animated)
+    print("viewWillAppear ViewController")
+        }
+        
+        override func viewDidAppear(_ animated:Bool){
+            super.viewDidAppear(animated)
+    print("viewDidAppear ViewController")
+        }
+        override func viewWillDisappear(_ animated:Bool){
+            super.viewWillDisappear(animated)
+    print("viewWillDisappear ViewController")
+        }
+        override func viewDidDisappear(_ animated:Bool){
+            super.viewDidDisappear(animated)
+    print("viewDidDisappear ViewController")
+        }
+       
+        
+
     @IBAction func checkResult() {
         
         let sliderNumber = Int(slider.value.rounded())
