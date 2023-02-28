@@ -38,12 +38,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAv-1q-iqy">
+                                <rect key="frame" x="692" y="321" width="132" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="О программе"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="Kta-B1-rl4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KAS-Ce-3ss"/>
                             <constraint firstItem="inq-Qp-nNN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KfL-MS-Xc1"/>
+                            <constraint firstItem="bAv-1q-iqy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="M6s-6S-gpo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bAv-1q-iqy" secondAttribute="trailing" constant="20" id="Pmb-h1-Btl"/>
                             <constraint firstItem="L9c-oi-eik" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QYv-SL-Snh"/>
                             <constraint firstItem="L9c-oi-eik" firstAttribute="top" secondItem="Kta-B1-rl4" secondAttribute="bottom" constant="30" id="Rs5-W3-YUb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="inq-Qp-nNN" secondAttribute="bottom" constant="30" id="civ-S3-ceF"/>
@@ -68,6 +75,16 @@
                     <view key="view" contentMode="scaleToFill" id="jyH-ew-dcD">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJm-SJ-i5a">
+                                <rect key="frame" x="380" y="179" width="88" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3t5-VU-Qu6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
