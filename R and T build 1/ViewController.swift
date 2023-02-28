@@ -18,6 +18,11 @@ class ViewController: UIViewController {
         genNumber = Int.random(in: 1...50)
         round += 1
         label.text = String(self.genNumber)
+        
+        let versionLababel = UILabel(frame: CGRect(x: 20, y: 10, width: 200, height: 50))//создаем новую текстовую метку
+        versionLababel.text = "v. 1.1"
+        self.view.addSubview(versionLababel)
+        
     }
     @IBAction func checkResult() {
         
