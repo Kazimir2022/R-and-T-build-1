@@ -81,10 +81,9 @@ print("loadView ViewController")
         
     }
     @IBAction func showNextScrean() {
-        let secondViewController = SecondViewController()
-        self.present(secondViewController, animated: true, completion: nil)
-        
-        
+        let storybord = UIStoryboard(name: "Main", bundle: nil)// загружаем файл storyboard
+        let viewController = storybord.instantiateViewController(withIdentifier: "SecondViewController")
+        self.present(viewController, animated: true)
     }
     
     
