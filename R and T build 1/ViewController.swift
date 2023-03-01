@@ -11,11 +11,8 @@ class ViewController: UIViewController {
     @IBOutlet var label:UILabel!
     @IBOutlet var slider:UISlider!
     var game:Game!
-    
-    override func loadView (){
-        super.loadView()
-        
-    }
+    // MARK: - Жизненный цикл
+
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Game(startGenNumber: 1, endGenNumber: 50, rounds: 5)
@@ -24,7 +21,7 @@ class ViewController: UIViewController {
     
     
     
-    
+    // MARK: - Взаимодействие View - Model
     
     
     
@@ -45,6 +42,7 @@ class ViewController: UIViewController {
         
     }
         
+    // MARK: - Обновление View
         private func updateLabel(newText: String){
             label.text = String(newText)
         }
