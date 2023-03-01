@@ -10,75 +10,54 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var label:UILabel!
     @IBOutlet var slider:UISlider!
-    var points:Int = 0
-    var round:Int = 0
-    var genNumber:Int = 0
+    var game:Game!
+    
     override func loadView (){
         super.loadView()
-print("loadView ViewController")
+        
     }
     override func viewDidLoad() {
-        
-        print("viewDidLoad ViewController")
-        
         super.viewDidLoad()
-        genNumber = Int.random(in: 1...50)
-        round += 1
-        label.text = String(self.genNumber)
-        
-        let versionLababel = UILabel(frame: CGRect(x: 20, y: 10, width: 200, height: 50))//создаем новую текстовую метку
-        versionLababel.text = "v. 1.2"
-        self.view.addSubview(versionLababel)
+        game = Game(startGenNumber: 1, endGenNumber: 50, rounds: 5)
+        updateLabel(newText: String(game.generateNumber))
     }
     
     
     
     
-       
-        
-
+    
+    
+    
     @IBAction func checkResult() {
+        game.calculateScore(sliderNum: Int(slider.value))
         
-        let sliderNumber = Int(slider.value.rounded())
+                // Проверяем, окончена ли игра
+                if game.isGameEnded {
+                    showAlertWith(score: game.score)
+                    // Рестартуем игру
+                    game.restartGame()
+                } else {
+                    game.startNewRound()
+                }
+                // Обновляем данные о текущем значении загаданного числа
+        updateLabel(newText: String(game.generateNumber))
         
-        if sliderNumber > self.genNumber{
-            points += 50 - (sliderNumber - self.genNumber)
-        } else if sliderNumber < self.genNumber{
-            points += 50 - (self.genNumber - sliderNumber)
-        } else {
-            points += 50
+        
+    }
+        
+        private func updateLabel(newText: String){
+            label.text = String(newText)
         }
-    
         
         
-    if self.round == 5{
-        let alert = UIAlertController(title: "Игра окончена", message: "Вы заработали \(self.points) очков", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "начать заново?", style: .default, handler: nil))
-        self.present(alert, animated: true)
-        self.round = 1
-        self.points = 0
-    } else {
-        self.round += 1
-    }
-        genNumber = Int.random(in: 1...50)
-        label.text = String(self.genNumber)
+    private func showAlertWith( score: Int ) {
+            let alert = UIAlertController(
+                            title: "Игра окончена",
+                            message: "Вы заработали \(score) очков",
+                            preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Начать заново", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
         
-    }
-    lazy var secondVC:SecondViewController = getSecondViewController()
-    
-    private func getSecondViewController()-> SecondViewController{
-        let storybord = UIStoryboard(name: "Main", bundle: nil)// загружаем файл storyboard
-                let viewController = storybord.instantiateViewController(withIdentifier: "SecondViewController")
-    return viewController as! SecondViewController
-    }
-    @IBAction func showNextScrean() {
-        self.present(secondVC, animated: true)
-    }
-    
-    
-    
-    
-    
-
+   
 }
-
